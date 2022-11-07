@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+    <meta name="description" content="Hi, i'm Loan. I'm an argentinian illustrator and comic book artist">
+    <meta name="keywords" content="arte, dibujo, comics, storyboard, layouts">
+    <link rel="shortcut icon" href="../Assets/icono.png">
+    <link rel="stylesheet" href="../bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg color">
+            <div class="container-fluid ">
+                <a class="navbar-brand titulo_logo" href="../index.html">
+                    <h2>
+                        Loan art
+                    </h2>
+                    <img class="logo" src="../Assets/Captura de pantalla 2022-09-29 201215_preview_rev_1.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse barra_final" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../index.html">
+                                <h5>Main</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../pages/Galeria.html">
+                                <h5>Gallery</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../pages/SobreMi.html">
+                                <h5>About Me</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../pages/Pedidos.html">
+                                <h5>Purchase</h5>
+                            </a>
+                        </li>
+                        <li class="nav-item color_botones">
+                            <a class="nav-link" href="../pages/Contacto.html">
+                                <h5>Contact</h5>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pedidos">
+            <h1>Realice su pedido a continuacion...</h1>
+            <form>
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <section>
+                        <div>
+                            <label>Nombre/s</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>Apellido</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>Correo electronico</label>
+                            <input type="text">
+                        </div>
+                        <div>
+                            <label>Telefono</label>
+                            <input type="text">
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset>
+                    <legend>Detalles del producto</legend>
+                    <section>
+                        <div>
+                            <label>Que dibujo desea comprar?</label>
+                            <select name="Obras">
+                                <option></option>
+                                <option>15 Dias Mas</option>
+                                <option>Batman Vampire</option>
+                                <option>Demonios Internos</option>
+                                <option>Social Distance</option>
+                                <option>Healthcare Heroes</option>
+                                <option>Extraños Sucesos en el Cementerio</option>
+                                <option>Muerte Roja</option>
+                                <option>Pizza y Alcohol en Gel</option>
+                                <option>Desolate Wasteland</option>
+                                <option>The Hand</option>
+                                <option>An Unexpected Visit</option>
+                                <option>Too Much to Tell</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label>cantidad</label>
+                            <select name="Cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset>
+                    <legend>Detalles del envio</legend>
+                    <section>
+                        <div>
+                            <label>Seleccione el Metodo de Envio</label>
+                            <div>
+                                A domicilio
+                                <input type="radio" name="envio" id="a domicilio">
+                            </div>
+
+                            <div>
+                                Retiro en punto de entrega
+                                <input type="radio" name="envio" id="retiro">
+                            </div>
+
+                        </div>
+                    </section>
+                </fieldset>
+                <fieldset>
+                    <section>
+                        <div>
+                            <label for="">Acepta los terminos y condiciones</label>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div>
+                            <input type="submit" value="enviar">
+                        </div>
+                    </section>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer color">
+        <section id="derechos">
+            <h5>2022, Loan arts ©</h5>
+        </section>
+        <section id="redes">
+            <a href="https://www.instagram.com/loan_art00/" id="ig">
+                <img src="../Assets/instagram icono.png">
+            </a>
+            <a href="https://www.facebook.com/loan.arts.90" id="fb">
+                <img src="../Assets/png-transparent-facebook-computer-icons-layout-rectangle-logo-brand.png">
+            </a>
+        </section>
+    </footer>
+    <script src="../bootstrap-5.2.2-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

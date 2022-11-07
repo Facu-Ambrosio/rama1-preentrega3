@@ -1,0 +1,81 @@
+@import"./colores/colores";
+@import"./media/media";
+/* coloca botones del nav al final */
+.barra_final {
+    justify-content: end;
+}
+
+/* color principal header y footer */
+.color {
+    background-color: map-get($map: $colores, $key: footer_header);/* mapa */
+}
+
+/* aplica flex y alinea titulo de la pagina y logo */
+.titulo_logo {
+    display: flex;
+    align-items: center;
+}
+/* modifica el tamaño del logo */
+.logo {
+    max-width: 20%;
+}
+
+/* hace un flex en la descripcion y alinea y le da padding y color */
+.descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: map-get($map: $colores, $key: main);/* mapa */
+}
+
+/* agrega color de fondo a la parte de pedidos */
+.pedidos {
+    background-color: map-get($map: $colores, $key: main);/* mapa */
+}
+
+/* le cambia el tamaño a la foto de la descripcion */
+.imagen_descripcion {
+    max-width: 60%;
+}
+
+/* a el bloque que contiene a la imagen de la descripcion le aplica un flex para ubicarlo en el centro */
+.imagen_flex {
+    display: flex;
+    justify-content: center;
+}
+
+.texto_descripcion {
+    text-align: center;
+    width: 85%;
+}
+
+body header nav div a h2 {
+    margin-bottom: 0;
+}
+
+body header nav div #navbarNav ul li a h5 {
+    margin-bottom: 0;
+}
+
+body header nav div a {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.imageMio {
+    max-width: 100%;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: map-get($map: $colores, $key: main);/* mapa */
+}
+

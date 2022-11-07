@@ -1,0 +1,263 @@
+@charset "UTF-8";
+@media screen and (min-width: 320px) {
+  #grilla_inicio {
+    display: grid;
+    grid-template-areas: "texto" "imagen" "texto2" "imagen2";
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr 0.4fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+  }
+  #texto1 {
+    grid-area: texto;
+    text-align: center;
+  }
+  #texto2 {
+    grid-area: texto2;
+    text-align: center;
+  }
+  #imagen_inicio1 {
+    grid-area: imagen;
+  }
+  #imagen_inicio2 {
+    grid-area: imagen2;
+  }
+  .imagen_inicio {
+    max-width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin-top: auto;
+  }
+  #ig img {
+    max-width: 6%;
+  }
+  #fb img {
+    max-width: 6%;
+  }
+  #redes {
+    text-align: center;
+  }
+  #derechos h5 {
+    margin: 0;
+  }
+  #grilla_galeria {
+    display: none;
+  }
+  #grilla_galeria section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #carousel {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  #titulo_fotos_galeria h5 {
+    color: rgba(240, 248, 255, 0.763); /* variable */
+  }
+  #titulo_fotos_galeria {
+    background-color: rgba(0, 0, 0, 0.6); /* variable */
+  }
+}
+@media screen and (min-width: 992px) {
+  .color_botones {
+    background-color: #EDDBC0; /* mapa */
+  }
+  #ig img {
+    max-width: 3%;
+  }
+  #fb img {
+    max-width: 3%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #grilla_inicio {
+    display: grid;
+    grid-template-areas: "texto texto imagen" "imagen2 texto2 texto2";
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+  }
+  #texto1 {
+    grid-area: texto;
+    text-align: center;
+  }
+  #texto2 {
+    grid-area: texto2;
+    text-align: center;
+  }
+  #imagen_inicio1 {
+    grid-area: imagen;
+  }
+  #imagen_inicio2 {
+    grid-area: imagen2;
+  }
+  #footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #grilla_galeria {
+    display: grid;
+    grid-template-areas: "g1 g2 g3" "g4 g5 g6" "g7 g8 g9" "g10 g11 g12";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #DBC8AC; /* mapa */
+    gap: 2px;
+  }
+  #carousel {
+    display: none;
+  }
+  #g1 {
+    grid-area: g1;
+  }
+  #g2 {
+    grid-area: g2;
+  }
+  #g3 {
+    grid-area: g3;
+  }
+  #g4 {
+    grid-area: g4;
+  }
+  #g5 {
+    grid-area: g5;
+  }
+  #g6 {
+    grid-area: g6;
+  }
+  #g7 {
+    grid-area: g7;
+  }
+  #g8 {
+    grid-area: g8;
+  }
+  #g9 {
+    grid-area: g9;
+  }
+  #g10 {
+    grid-area: g10;
+  }
+  #g11 {
+    grid-area: g11;
+  }
+  #g12 {
+    grid-area: g12;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #grilla_galeria {
+    grid-template-areas: "g1 g2 g3 g4" "g5 g6 g7 g8" "g9 g10 g11 g12";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .containerMio {
+    position: relative;
+  }
+  .overlayMio {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f1f1f1;
+    /* mapa */
+    width: 100%;
+    transition: 0.5s;
+    opacity: 0;
+    color: white;
+    /* mapa */
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .containerMio:hover .overlayMio {
+    opacity: 1;
+  }
+}
+/* coloca botones del nav al final */
+.barra_final {
+  justify-content: end;
+}
+
+/* color principal header y footer */
+.color {
+  background-color: #DD5353; /* mapa */
+}
+
+/* aplica flex y alinea titulo de la pagina y logo */
+.titulo_logo {
+  display: flex;
+  align-items: center;
+}
+
+/* modifica el tamaño del logo */
+.logo {
+  max-width: 20%;
+}
+
+/* hace un flex en la descripcion y alinea y le da padding y color */
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #DBC8AC; /* mapa */
+}
+
+/* agrega color de fondo a la parte de pedidos */
+.pedidos {
+  background-color: #DBC8AC; /* mapa */
+}
+
+/* le cambia el tamaño a la foto de la descripcion */
+.imagen_descripcion {
+  max-width: 60%;
+}
+
+/* a el bloque que contiene a la imagen de la descripcion le aplica un flex para ubicarlo en el centro */
+.imagen_flex {
+  display: flex;
+  justify-content: center;
+}
+
+.texto_descripcion {
+  text-align: center;
+  width: 85%;
+}
+
+body header nav div a h2 {
+  margin-bottom: 0;
+}
+
+body header nav div #navbarNav ul li a h5 {
+  margin-bottom: 0;
+}
+
+body header nav div a {
+  padding-top: 0%;
+  padding-bottom: 0%;
+}
+
+.imageMio {
+  max-width: 100%;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #DBC8AC; /* mapa */
+}/*# sourceMappingURL=style.css.map */

@@ -1,6 +1,11 @@
 @import"./colores/colores";
 @import"./media/media";
 /* coloca botones del nav al final */
+
+.a{
+    text-decoration: none;
+}
+
 .barra_final {
     justify-content: end;
 }

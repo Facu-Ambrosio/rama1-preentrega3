@@ -9,7 +9,7 @@
         "texto2"
         "imagen2";
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 1fr 0.4fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.4fr 1fr;
         align-items: center;
         justify-content: center;
         padding: 1%;
@@ -31,8 +31,12 @@
         margin-top: auto;
     }
 
+    #ig{
+        display: flex;
+    }
+
     #ig img {
-        max-width: 6%;
+        max-width: 15%;
     }
 
     #fb img {
@@ -40,7 +44,7 @@
     }
 
     #redes {
-        text-align: center;
+        display: flex;
     }
 
     #derechos h5 {
@@ -194,17 +198,18 @@
 
     .overlayMio {
         position: absolute;
-        bottom: 0;
+        bottom: 0%;
         background: rgba(0, 0, 0, 0.7);
-        color: map-get($map: $colores, $key:overlay);
-        /* mapa */
+        color: #f1f1f1;
         width: 100%;
         transition: 0.5s;
         opacity: 0;
-        color: map-get($map: $colores, $key: letras_overlay);
-        /* mapa */
+        color: white;
         font-size: 20px;
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 61%;
+        padding-bottom: 72%;
         text-align: center;
     }
 
